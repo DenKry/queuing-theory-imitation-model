@@ -242,17 +242,3 @@ Simulation outputs to `simulation_results.json`:
 
 ### `/simulation` - Simulation engine
 - `simulation_engine.py`: Orchestrates all nodes, manages lifecycle
-
-### `/tests` - Unit tests
-- `test_priority_queue.py`: Priority queue logic tests
-- `test_round_robin.py`: Load balancing tests
-- `test_distributions.py`: Distribution generator tests
-
-## Architecture Highlights
-
-- **Fully distributed**: Each node runs independently with TCP communication
-- **Thread-safe**: All shared data structures use locks
-- **Event-driven**: Asynchronous request/response processing
-- **Configurable**: All parameters externalized to `config.py`
-- **Observable**: Comprehensive logging and metrics collection
-- **Fault-tolerant**: Handles processor failures gracefully
