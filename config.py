@@ -26,17 +26,17 @@ class Config:
     removal_mode: RemovalMode = RemovalMode.AFTER_SERVICE
     
     # Service time (type)
-    service_time_type: ServiceTimeType = ServiceTimeType.UNIFORM
+    service_time_type: ServiceTimeType = ServiceTimeType.EXPONENTIAL    # or FIXED, NORMAL, EXPONENTIAL, UNIFORM
     service_time_fixed: float = 1.0
     service_time_uniform_a: float = 0.5
     service_time_uniform_b: float = 2.0
     service_time_exp_lambda: float = 1.0
     service_time_normal_mean: float = 1.0
-    service_time_normal_mean: float = 0.2
+    service_time_normal_std: float = 0.2
     
     # Dynamic scaling
     avg_wait_time_threshold: float = 5.0
-    scale_down_threshold: float = 1.5  # Scale down when avg_wait < this value
+    scale_down_threshold: float = 1.5
     scaling_cooldown: float = 10.0
     max_processors_per_type: int = 5
     min_processors_per_type: int = 1
@@ -54,6 +54,6 @@ class Config:
     # Simulation
     simulation_duration: float = 60.0
     request_generation_rate: float = 2.0  # req/sec
-    random_seed: int = 325
+    random_seed: int = 326
 
 CONFIG = Config()

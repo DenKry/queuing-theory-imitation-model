@@ -53,7 +53,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# python main.py --duration 60 --rate 2.0 --seed 123
-
-# python -m pytest tests/ -v

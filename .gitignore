@@ -19,6 +19,9 @@ ENV/
 # Simulation results
 simulation_results.json
 
+# Reporting
+reporting/
+
 # Logs
 *.log
 
