@@ -1,0 +1,30 @@
+# Ignore system architecture image
+system_arch.jpg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Simulation results
+simulation_results.json
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
